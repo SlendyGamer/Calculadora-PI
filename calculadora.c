@@ -33,9 +33,18 @@ float multiply(float N1)
 float divide(float N1)
     {
         float N2 = 0, Res;
-        printf("Nm:  ");
-        scanf("%f", &N2);
-        Res = N1 / N2;
+        do
+            {
+            printf("Nm:  ");
+            scanf("%f", &N2);
+
+            if (N2 == 0)
+                printf("erro")
+
+            else
+                Res = N1 / N2;
+
+            }while (N2 == 0);
         return Res;
     }
 
